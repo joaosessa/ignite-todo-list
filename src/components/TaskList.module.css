@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 48rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+
+    gap: 0.75rem;
+}
+
+.emptyList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    padding: 4rem 1rem;
+    color: var(--gray-300);
+
+    gap: 1rem;
+}
+
+.emptyList div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+
+    padding: 1rem;
+    border: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    background: var(--gray-500);
+
+    gap: 0.75rem;
+}
+
+.completeTask,
+.incompleteTask {
+    flex: 1;
+
+    color: var(--gray-100);
+    font-size: 0.875rem;
+}
+
+.completeTask {
+    color: var(--gray-300);
+    text-decoration: line-through;
+}
+
+.completeButton,
+.incompleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+
+    cursor: pointer;
+    background: transparent;
+    border-radius: 999px;
+}
+
+.incompleteButton {
+    color: transparent;
+    border: 2px solid var(--blue);
+}
+
+.incompleteButton:hover {
+    background: #1e6f9f33;
+    border: 2px solid var(--blue-dark);
+}
+
+.incompleteButton svg {
+    fill: transparent;
+}
+
+.completeButton {
+    background: var(--purple-dark);
+}
+
+.completeButton:hover {
+    background: var(--purple);
+}
+
+.completeButton svg {
+    fill: var(--gray-100);
+}
+
+.deleteButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+
+    cursor: pointer;
+    background: transparent;
+    border-radius: 4px;
+    color: var(--gray-300);
+}
+
+.deleteButton svg {
+    fill: var(--gray-300);
+}
+
+.deleteButton:hover {
+    background: var(--gray-400);
+}
+
+.deleteButton:hover svg {
+    fill: var(--danger);
+}

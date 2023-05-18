@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 48rem;
+    padding: 0 1rem;
+    margin: calc(4rem - 1px - 1rem - (0.875rem * 1.4 / 2)) auto 1.5rem;
+}
+
+.box {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.created {
+    color: var(--blue);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.completed {
+    color: var(--purple);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.counter {
+    padding: 0.125rem 0.5rem;
+    border-radius: 999px;
+
+    background: var(--gray-400);
+    color: var(--gray-200);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
